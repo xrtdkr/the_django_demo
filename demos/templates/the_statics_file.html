@@ -1,0 +1,16 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+<head>
+    <title>the_statics_demo</title>
+    {% load staticfiles %}
+    <link href="{% static "statics.css" %}"><!--此处应该有CSS-->
+</head>
+<body>
+<h1>statics DEMO!!!</h1>
+{% load staticfiles %}
+<img src="{% static "swufe.jpeg" %}" alt="fuck"><!--这里应该有一个图片-->
+<p>这是测试所使用的段落用来测试</p>
+</body>
+</html>
