@@ -1,0 +1,17 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+<head>
+    <title>session scratch</title>
+</head>
+<body>
+<h1>session scratch and present</h1>
+{% if  session_test1 and session_test2 %}
+    <p>the session you want is:</p>
+    <ul>{{ session_test1 }} and {{ session_test2 }}</ul>
+    {% else %}
+    <p style="color: coral">you didn't receive any session</p>
+{% endif %}
+</body>
+</html>

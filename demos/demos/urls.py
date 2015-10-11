@@ -1,4 +1,4 @@
-"""demos URL Configuration
+"""iec_book_manage URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.8/topics/http/urls/
@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from statics_demo.views import statics_post
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^statics_demo/$', statics_post),
+    url(r'^session_demo/', 'session_demo.views.session_operate'),
+    url(r'^statics_demo/', 'statics_demo.views.statics_post'),
+    url(r'^session_operate_1/', 'session_demo.views.session_operate_1'),
 ]
